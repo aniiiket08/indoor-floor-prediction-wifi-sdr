@@ -1,4 +1,4 @@
-# 📡 Indoor Floor Prediction — WiFi Fingerprinting + USRP B210 SDR
+# 📡 Indoor Floor Prediction - WiFi Fingerprinting + USRP B210 SDR
 
 A 1D CNN trained on WiFi RSSI fingerprints to predict which floor of a building a user is on, paired with a software-defined radio pipeline for real-world signal acquisition.
 

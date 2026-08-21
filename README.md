@@ -6,7 +6,7 @@ A 1D CNN trained on WiFi RSSI fingerprints to predict which floor of a building 
 ![PyTorch](https://img.shields.io/badge/PyTorch-CNN-EE4C2C?logo=pytorch&logoColor=white)
 ![GNU Radio](https://img.shields.io/badge/GNU%20Radio-SDR-orange)
 ![USRP](https://img.shields.io/badge/Ettus-USRP%20B210-lightgrey)
-![Status](https://img.shields.io/badge/hardware%20integration-in%20progress-yellow)
+![Status](https://img.shields.io/badge/hardware%20integration-completed-brightgreen)
 
 ---
 

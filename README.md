@@ -9,13 +9,13 @@
 ![GNU Radio](https://img.shields.io/badge/gnu%20radio-gr--ieee802--11-3b4252?style=flat-square)
 ![USRP](https://img.shields.io/badge/ettus-usrp%20b210-3b4252?style=flat-square)
 
-[Overview](#overview) · [Status](#status) · [Pipeline](#pipeline) · [Getting started](#getting-started) · [Usage](#usage) · [Structure](#project-structure)
+[Overview](#-overview) · [Status](#-status) · [Pipeline](#-pipeline) · [Getting started](#-getting-started) · [Usage](#-usage) · [Structure](#-project-structure)
 
 </div>
 
 <br>
 
-## Overview
+## 📡 Overview
 
 GPS does not work reliably indoors, since walls and ceilings degrade the satellite signal. WiFi fingerprinting gets around this by treating the signal strengths of nearby access points as a location signature.
 
@@ -32,14 +32,14 @@ This project trains a 1D CNN to predict which floor of a building a device is on
 
 <br>
 
-## Status
+## 🚦 Status
 
 | Component | State |
 |---|---|
-| Preprocessing, training, prediction on UJIIndoorLoc | Complete |
-| USRP B210 bring-up (UHD, GNU Radio, udev rules) | Complete |
-| Raw IQ capture and power estimation | Complete |
-| Floor prediction from live local captures | Blocked, see below |
+| Preprocessing, training, prediction on UJIIndoorLoc | ✅ Complete |
+| USRP B210 bring-up (UHD, GNU Radio, udev rules) | ✅ Complete |
+| Raw IQ capture and power estimation | ✅ Complete |
+| Floor prediction from live local captures | 🚧 Blocked, see below |
 
 > [!IMPORTANT]
 > **The model cannot yet predict floors for the local building.**
@@ -52,7 +52,7 @@ Two ways forward:
 
 <br>
 
-## Pipeline
+## 🔧 Pipeline
 
 <p align="center">
   <img src="assets/pipeline_diagram.png" alt="RF environment to USRP B210 to raw IQ to gr-ieee802-11 decoding to fingerprint extraction to CNN to predicted floor" width="860">
@@ -60,7 +60,7 @@ Two ways forward:
 
 <br>
 
-## Getting started
+## 🚀 Getting started
 
 **Requirements**
 
@@ -105,7 +105,7 @@ uhd_find_devices
 
 <br>
 
-## Usage
+## ⚡ Usage
 
 ### 1. Train and evaluate
 
@@ -147,7 +147,7 @@ python3 extract_fingerprint.py \
 
 <br>
 
-## Project structure
+## 📁 Project structure
 
 ```
 .
@@ -169,7 +169,7 @@ python3 extract_fingerprint.py \
 
 <br>
 
-## Glossary
+## 📖 Glossary
 
 <details>
 <summary><b>Terms used in this project</b></summary>
@@ -189,6 +189,6 @@ python3 extract_fingerprint.py \
 
 <br>
 
-## Acknowledgements
+## 🤝 Acknowledgements
 
 Training data from [UJIIndoorLoc](https://archive.ics.uci.edu/dataset/310/ujiindoorloc), UCI Machine Learning Repository. Frame decoding by [gr-ieee802-11](https://github.com/bastibl/gr-ieee802-11).
